@@ -9,7 +9,6 @@ import Archive from './components/archive';
 
 const routes = [
     { path: '/', name: "Home", Component: Home },
-    { path: '/about', name: "About", Component: About },
     { path: '/archive', name: "Archive", Component: Archive },
     { path: '/projects', name: "Projects", Component: Projects },
 ]
@@ -26,11 +25,13 @@ export default function Routes() {
                 classNames="anim-page"
                 unmountOnExit>
                 <div className="anim-page">
-                    <Switch location={location}>
-                        {routes.map(({ path, Component }) => (
-                            <Route key={path} exact path={path} component={Component} />
-                        ))}
-                    </Switch>
+                    <div className="anim-page-inner container">
+                        <Switch location={location}>
+                            {routes.map(({ path, Component }) => (
+                                <Route key={path} exact path={path} component={Component} />
+                                ))}
+                        </Switch>
+                    </div>
                 </div>
             </CSSTransition >
         </TransitionGroup>

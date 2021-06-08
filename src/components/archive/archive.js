@@ -4,7 +4,7 @@ import './archive.scss';
 export const Archive = () => {
     return (
         <React.Fragment>
-            <h1>Archive page</h1>
+            <h1>Archive</h1>
         </React.Fragment>
     )
 }

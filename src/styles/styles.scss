@@ -1,9 +1,17 @@
 .main-div {
-    margin: auto;
+    padding-top: 50px;
+    position: relative;
 }
 
 .anim-page {
     position: absolute;
+    left: 50%;
+    width: 100%;
+}
+
+.anim-page-inner {
+    position: relative;
+    left: -50%;
 }
 
 /* Routing animation */

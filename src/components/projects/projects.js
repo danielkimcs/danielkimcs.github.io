@@ -3,8 +3,8 @@ import './projects.scss';
 
 export const Projects = () => {
     return (
-        <React.Fragment>
-            <h1>Projects page</h1>
-        </React.Fragment>
+        <div className="projects-container">
+            <h1>Projects</h1>
+        </div>
     )
 }

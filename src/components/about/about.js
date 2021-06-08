@@ -4,7 +4,7 @@ import './about.scss';
 export const About = () => {
     return (
         <React.Fragment>
-            <h1>About page</h1>
+            <h1>About</h1>
         </React.Fragment>
     )
 }
