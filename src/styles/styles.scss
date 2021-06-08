@@ -1,0 +1,26 @@
+.main-div {
+    margin: auto;
+}
+
+.anim-page {
+    position: absolute;
+}
+
+/* Routing animation */
+.anim-page-enter {
+    opacity: 0;
+}
+
+.anim-page-enter-active {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.anim-page-exit {
+    opacity: 1;
+}
+
+.anim-page-exit-active {
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
