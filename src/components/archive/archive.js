@@ -3,8 +3,8 @@ import './archive.scss';
 
 export const Archive = () => {
     return (
-        <React.Fragment>
+        <div className="archive-container page-container">
             <h1>Archive</h1>
-        </React.Fragment>
+        </div>
     )
 }

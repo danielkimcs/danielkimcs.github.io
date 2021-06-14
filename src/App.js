@@ -4,6 +4,7 @@ import Routes from "./routes";
 import { BrowserRouter as Router } from "react-router-dom";
 import { AppContext } from "./utils/contextLib";
 import Navigation from "./shared/components/navbar";
+import Footer from "./shared/components/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
                 <Routes />
         </AppContext.Provider>
       </div>
+      <Footer />
     </Router>
   );
 }
