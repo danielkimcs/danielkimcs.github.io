@@ -5,7 +5,7 @@ import archiveData from '../../shared/archive-data';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import DocumentCard from './document';
+import DocumentCard from './document-card';
 
 let uniques = new Set();
 for (const document of archiveData.data) {
@@ -134,8 +134,8 @@ export const Archive = () => {
                     <Row xs={1} md={2} xl={3} className="card-row g-4">
                         {archiveData.data.sort(comparator)
                             .filter(filterDocuments)
-                            .map(document =>
-                                <Col>
+                            .map((document, index) =>
+                                <Col key={document.fileName+index}>
                                     <DocumentCard document={document}></DocumentCard>
                                 </Col>)
                         }

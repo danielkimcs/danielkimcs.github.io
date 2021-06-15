@@ -27,7 +27,7 @@ const DocumentCard = ({ document }) => {
             <Card.Body>
                 <div className="tag-container">
                     {document.tags.map((tag) => (
-                        <div className="tag">
+                        <div key={document.fileName+tag} className="tag">
                             {tag}
                         </div>
                     ))}

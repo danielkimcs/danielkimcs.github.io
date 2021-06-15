@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Routes from "./routes";
 
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
-import { AppContext } from "./utils/contextLib";
+// import { AppContext } from "./utils/contextLib";
 import Navigation from "./shared/components/navbar";
 import Footer from "./shared/components/footer";
 
@@ -13,9 +13,9 @@ function App() {
       <ScrollToTop />
       <Navigation />
       <div className="main-div">
-        <AppContext.Provider>
+        {/* <AppContext.Provider> */}
                 <Routes />
-        </AppContext.Provider>
+        {/* </AppContext.Provider> */}
       </div>
       <Footer />
     </Router>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './projects.scss';
 import projectsData from '../../shared/projects-data';
 import { NavLink } from "react-router-dom";
@@ -7,7 +7,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
+let coverLinks = projectsData.data.filter(project => project.coverPhoto && project.coverPhoto.length > 0).map(project => require("../../shared/assets/images/" + project.coverPhoto).default);
+
 export const Projects = () => {
+    useEffect(() => {
+        coverLinks.forEach((link) => {
+            new Image().src = link;
+        });
+    }, []);
+
     return (
         <Container>
             <div className="projects-container page-container">
@@ -15,7 +23,7 @@ export const Projects = () => {
                 <Container>
                     <Row xs={1} lg={2} className="g-4">
                         {projectsData.data.map(project =>
-                            <Col>
+                            <Col key={project.title}>
                                 <Card className="project-div bg-light h-100">
                                     {project.coverPhoto && project.coverPhoto.length > 0 ?
                                         (project.externalLink.length > 0 ?
@@ -30,7 +38,7 @@ export const Projects = () => {
                                         <Card.Text>{project.preview}</Card.Text>
                                         <div className="tag-container">
                                             {project.tags.map((tag) => (
-                                                <div className="tag">
+                                                <div key={project.title+tag} className="tag">
                                                     {tag}
                                                 </div>
                                             ))}
