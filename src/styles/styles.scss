@@ -2,12 +2,30 @@
 
 body {
     width: 100%;
+    background-color: $body-background-color;
+    color: $theme-1;
+    font-family: "Computer Modern", sans-serif;
 }
+
+// h1, h2, h3, h4, h5, h6 {
+// }
 
 .main-div {
     margin: auto;
-    padding-top: 20px;
+    padding-top: $main-div-padding-top;
     position: relative;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: $theme-2-link;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    a:hover {
+        background-color: $theme-1;
+        color: $theme-4;
+    }
 }
 
 .page-container {
@@ -18,26 +36,6 @@ body {
     overflow-x: hidden;
     padding-bottom: $footer-height;
 }
-
-/* Routing animation */
-.anim-page-enter {
-    opacity: 0;
-}
-
-.anim-page-enter-active {
-    opacity: 1;
-    transition: opacity 300ms, transform 300ms;
-}
-
-.anim-page-exit {
-    opacity: 1;
-}
-
-.anim-page-exit-active {
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-}
-
 
 .tag-container {
     margin-top: -0.5rem;
@@ -66,3 +64,21 @@ body {
     }
 }
 
+/* Routing animation */
+.anim-page-enter {
+    opacity: 0;
+}
+
+.anim-page-enter-active {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.anim-page-exit {
+    opacity: 1;
+}
+
+.anim-page-exit-active {
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}

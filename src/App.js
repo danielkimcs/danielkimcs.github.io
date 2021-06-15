@@ -12,7 +12,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Navigation />
-      <div className="main-div container">
+      <div className="main-div">
         <AppContext.Provider>
                 <Routes />
         </AppContext.Provider>

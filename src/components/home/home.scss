@@ -1,4 +1,25 @@
+@import "../../styles/variables";
+
 .home-container {
+    margin-top: -$main-div-padding-top;
+
+    .intro {
+        padding-top: $main-div-padding-top;
+        min-height: calc(100vh - #{$navbar-height});
+        // background-image: linear-gradient($theme-5, $theme-4);
+        background-image: linear-gradient($theme-4, $theme-5, $theme-4);
+        display: flex;
+
+        .container {
+            margin: auto;
+        }
+    }
+
+    .timeline {
+        border-left: 5px solid $theme-1;
+        margin-bottom: 50px;
+    }
+
     .avatar {
         max-width: 12em;
         border-radius: 50%;
@@ -6,19 +27,52 @@
         float: right;
     }
 
-    .accordion {
-        .card {
-            .btn {
+    .card {
+        background-color: $theme-5;
+        border-radius: 0;
+        margin-bottom: 5px;
+
+        .card-header {
+            // background-color: $theme-3;
+            border-radius: 0;
+            transition: opacity .2s;
+
+            button {
+                outline: 0;
+                border: 0;
+                background-color: inherit;
+                opacity: 1;
 
                 p {
-                    text-align: left;
-                    color: black;
-                } 
+                    color: $theme-5;
+                }
             }
 
-            span {
-                font-weight: bold;
+            p {
+                text-align: left;
+                margin: auto;
             }
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .accordion {
+        .card {
+            .card-header {
+                background-color: $theme-1;
+            }
+
+            .card-header:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .experience {
+        .h4 {
+            font-weight: bold;
         }
     }
 }

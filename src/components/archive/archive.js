@@ -85,64 +85,66 @@ export const Archive = () => {
     }
 
     return (
-        <div className="archive-container page-container">
-            <h1>Archive</h1>
-            <Container>
-                <Row>
-                    <input type="text" placeholder="Search keyword" onChange={e => setKeywordFilter(e.target.value)} />
-                </Row>
-                <Row>
-                    <Multiselect
-                        options={uniques}
-                        isObject={false}
-                        onSelect={onTagFilterSelect}
-                        onRemove={onTagFilterRemove}
-                        avoidHighlightFirstOption={true}
-                        selectedValues={tagFilters}
-                        placeholder="Filter tags"
-                        hidePlaceholder={true}
-                    />
-                </Row>
-                <Row>
-                    Sort by:
-                    <Multiselect
-                        options={sortable}
-                        displayValue="name"
-                        singleSelect={true}
-                        avoidHighlightFirstOption={true}
-                        onSelect={onSortSelect}
-                        onRemove={onSortRemove}
-                        selectedValues={sortable.filter(e => e.property === sortOptions.property)}
-                        placeholder="Sort by"
-                        hidePlaceholder={true}
-                    />
-                    Ascending: <input type="checkbox" checked={sortOptions.ascending} onChange={() => setSortOptions({...sortOptions, ascending: !sortOptions.ascending})} />
-                </Row>
-                <Row xs={1} md={2} lg={3} className="g-4">
-                    {archiveData.data.sort(comparator)
-                        .filter(filterDocuments)
-                        .map(document =>
-                            <Col>
-                                <Card className="document-card bg-light h-100" onClick={() => openDocument(document.fileName)}>
-                                    <Card.Header>{document.title}</Card.Header>
-                                    <Card.Body>
-                                        <div className="tag-container">
-                                            {document.tags.map((tag) => (
-                                                <div className="tag">
-                                                    { tag}
-                                                </div>
-                                            ))}
-                                        </div>
-                                        <Card.Text>{document.description}</Card.Text>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        {formatDayMonthYear(document.date)}
-                                    </Card.Footer>
-                                </Card>
-                            </Col>)
-                    }
-                </Row>
-            </Container>
-        </div>
+        <Container>
+            <div className="archive-container page-container">
+                <h1>Archive</h1>
+                <Container>
+                    <Row>
+                        <input type="text" placeholder="Search keyword" onChange={e => setKeywordFilter(e.target.value)} />
+                    </Row>
+                    <Row>
+                        <Multiselect
+                            options={uniques}
+                            isObject={false}
+                            onSelect={onTagFilterSelect}
+                            onRemove={onTagFilterRemove}
+                            avoidHighlightFirstOption={true}
+                            selectedValues={tagFilters}
+                            placeholder="Filter tags"
+                            hidePlaceholder={true}
+                        />
+                    </Row>
+                    <Row>
+                        Sort by:
+                        <Multiselect
+                            options={sortable}
+                            displayValue="name"
+                            singleSelect={true}
+                            avoidHighlightFirstOption={true}
+                            onSelect={onSortSelect}
+                            onRemove={onSortRemove}
+                            selectedValues={sortable.filter(e => e.property === sortOptions.property)}
+                            placeholder="Sort by"
+                            hidePlaceholder={true}
+                        />
+                        Ascending: <input type="checkbox" checked={sortOptions.ascending} onChange={() => setSortOptions({ ...sortOptions, ascending: !sortOptions.ascending })} />
+                    </Row>
+                    <Row xs={1} md={2} lg={3} className="g-4">
+                        {archiveData.data.sort(comparator)
+                            .filter(filterDocuments)
+                            .map(document =>
+                                <Col>
+                                    <Card className="document-card bg-light h-100" onClick={() => openDocument(document.fileName)}>
+                                        <Card.Header>{document.title}</Card.Header>
+                                        <Card.Body>
+                                            <div className="tag-container">
+                                                {document.tags.map((tag) => (
+                                                    <div className="tag">
+                                                        {tag}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <Card.Text>{document.description}</Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                            {formatDayMonthYear(document.date)}
+                                        </Card.Footer>
+                                    </Card>
+                                </Col>)
+                        }
+                    </Row>
+                </Container>
+            </div>
+        </Container>
     )
 }

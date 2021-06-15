@@ -14,7 +14,7 @@ const projectsData = {
             My school's principal wrote a gracious <a href="#">letter</a> and my math teacher decided to use it as the official textbook for the class. I also had the opportunity to present my textbook in front of a group of graduate students and professors, who were visiting our high school while the administration was explaining the school’s math curriculum. </p>`,
             startDate: null,
             endDate: new Date(2019, 2),
-            coverPhoto: "advprecalc-cover.png",
+            coverPhoto: "advprecalc-cover_small.png",
             externalLink: "https://www.amazon.com/dp/0578479435/ref=cm_sw_em_r_mt_dp_U_cnQ.EbRMQZRY3",
             path: "adv-precalc"
         },
@@ -29,7 +29,7 @@ const projectsData = {
             While developing the site, I used the CSS framework <a href="https://materializecss.com/">Materialize</a> for responsive design. Since I had to ensure that updates were only posted by a limited number of people, I implemented user authentication via <a href="https://firebase.google.com/">Firebase</a>.</p>`,
             startDate: new Date(2019, 8),
             endDate: new Date(2020, 5),
-            coverPhoto: "bca-math-team-website.png",
+            coverPhoto: "bca-math-team-website_small.png",
             externalLink: "https://bcamathteam.org/",
             path: "math-team-website"
         },
@@ -40,7 +40,7 @@ const projectsData = {
             description: "",
             startDate: null,
             endDate: null,
-            coverPhoto: "jhmmc-website.png",
+            coverPhoto: "jhmmc-website_small.png",
             externalLink: "https://github.com/danielkimcs/holbrook-website/",
             path: ""
         },
@@ -51,7 +51,7 @@ const projectsData = {
             description: "",
             startDate: null,
             endDate: null,
-            coverPhoto: "bs-poker.png",
+            coverPhoto: "bs-poker_small.png",
             externalLink: "https://github.com/danielkimcs/BS-poker",
             path: ""
         },

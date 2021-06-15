@@ -1,1 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
+
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('./styles/computer-modern/cmunss.otf');
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('./styles/computer-modern/cmunsx.otf');
+    font-weight: bold;
+  }
+//   @font-face {
+//     font-family: "Computer Modern";
+//     src: url('./styles/computer-modern/cmunsi.otf');
+//     font-style: italic, oblique;
+//   }
+//   @font-face {
+//     font-family: "Computer Modern";
+//     src: url('./styles/computer-modern/cmunbxo.otf');
+//     font-weight: bold;
+//     font-style: italic, oblique;
+//   }
