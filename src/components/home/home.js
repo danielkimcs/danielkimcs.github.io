@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.scss';
-import projectsData from '../../shared/projects-data';
-import archiveData from '../../shared/archive-data';
+// import projectsData from '../../shared/projects-data';
+// import archiveData from '../../shared/archive-data';
 import Row from 'react-bootstrap/Row';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';

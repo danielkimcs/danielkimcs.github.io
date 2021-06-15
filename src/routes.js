@@ -25,9 +25,9 @@ export default function Routes() {
         <TransitionGroup component={null}>
             <CSSTransition
                 key={location.key}
-                timeout={600}
+                timeout={300}
                 classNames="anim-page"
-                exit={false}
+                // exit={false}
                 unmountOnExit
                 >
                 <div className="anim-page">

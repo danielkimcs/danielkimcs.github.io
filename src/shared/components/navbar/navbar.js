@@ -16,10 +16,10 @@ export const Navigation = () => {
                     </Nav>
                     <Nav>
                         <Navbar.Brand>
-                            <NavLink to="/projects">Projects</NavLink>
+                            <NavLink to="/projects" exact activeClassName="activeLink">Projects</NavLink>
                         </Navbar.Brand>
                         <Navbar.Brand>
-                            <NavLink to="/archive">Archive</NavLink>
+                            <NavLink to="/archive" exact activeClassName="activeLink">Archive</NavLink>
                         </Navbar.Brand>
                         <Navbar.Brand>
                             <NavLink to="#">Resume</NavLink>

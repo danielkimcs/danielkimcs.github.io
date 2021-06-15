@@ -89,37 +89,54 @@ export const Archive = () => {
             <div className="archive-container page-container">
                 <h1>Archive</h1>
                 <Container>
-                    <Row>
-                        <input type="text" placeholder="Search keyword" onChange={e => setKeywordFilter(e.target.value)} />
+                    <Row className="customization-options">
+                        <Col className="search-bar" sm={12} lg={6}>
+                            <input type="text" placeholder="Search keyword" onChange={e => setKeywordFilter(e.target.value)} />
+                        </Col>
+                        <Col sm={12} lg={6} className="filter-dropdown">
+                            <Multiselect
+                                options={uniques}
+                                isObject={false}
+                                onSelect={onTagFilterSelect}
+                                onRemove={onTagFilterRemove}
+                                avoidHighlightFirstOption={true}
+                                selectedValues={tagFilters}
+                                placeholder="Filter tags"
+                                hidePlaceholder={true}
+                            />
+                        </Col>
+                        <Col xs={12} md={9} lg={10} className="sort-options">
+                            <Row>
+                                <Col xs={2}>
+                                    <p className="label">Sort by:</p>
+                                </Col>
+                                <Col xs={10}>
+                                    <Multiselect
+                                        options={sortable}
+                                        displayValue="name"
+                                        singleSelect={true}
+                                        avoidHighlightFirstOption={true}
+                                        onSelect={onSortSelect}
+                                        onRemove={onSortRemove}
+                                        selectedValues={sortable.filter(e => e.property === sortOptions.property)}
+                                        placeholder="Sort by"
+                                        hidePlaceholder={true}
+                                    />
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col xs={{ span: 6, offset: 3 }} md={{span: 3, offset: 0}} lg={{span: 2, offset: 0}} className="ascending-checkbox">
+                            <p>
+                                Ascending:
+                            </p>
+                            <input
+                                type="checkbox"
+                                checked={sortOptions.ascending}
+                                onChange={() => setSortOptions({ ...sortOptions, ascending: !sortOptions.ascending })}
+                            />
+                        </Col>
                     </Row>
-                    <Row>
-                        <Multiselect
-                            options={uniques}
-                            isObject={false}
-                            onSelect={onTagFilterSelect}
-                            onRemove={onTagFilterRemove}
-                            avoidHighlightFirstOption={true}
-                            selectedValues={tagFilters}
-                            placeholder="Filter tags"
-                            hidePlaceholder={true}
-                        />
-                    </Row>
-                    <Row>
-                        Sort by:
-                        <Multiselect
-                            options={sortable}
-                            displayValue="name"
-                            singleSelect={true}
-                            avoidHighlightFirstOption={true}
-                            onSelect={onSortSelect}
-                            onRemove={onSortRemove}
-                            selectedValues={sortable.filter(e => e.property === sortOptions.property)}
-                            placeholder="Sort by"
-                            hidePlaceholder={true}
-                        />
-                        Ascending: <input type="checkbox" checked={sortOptions.ascending} onChange={() => setSortOptions({ ...sortOptions, ascending: !sortOptions.ascending })} />
-                    </Row>
-                    <Row xs={1} md={2} lg={3} className="g-4">
+                    <Row xs={1} md={2} xl={3} className="card-row g-4">
                         {archiveData.data.sort(comparator)
                             .filter(filterDocuments)
                             .map(document =>

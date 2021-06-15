@@ -40,7 +40,7 @@ export const Projects = () => {
                                         {project.path && project.path.length > 0 ?
                                             <NavLink to={"/projects/" + project.path}>Read more</NavLink>
                                             : (project.externalLink && project.externalLink.length > 0 ?
-                                                <a href={project.externalLink} target="_blank" rel="noreferrer noopener">Check it out</a> : null
+                                                <a href={project.externalLink} target="_blank" rel="noreferrer noopener">Read more</a> : null
                                             )}
                                     </Card.Footer>
                                 </Card>
