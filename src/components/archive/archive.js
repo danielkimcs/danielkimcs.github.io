@@ -18,6 +18,11 @@ for (const document of archiveData.data) {
 
 uniques = [...uniques];
 
+const sortable = [
+    { name: "Title", property: "title" },
+    { name: "Date Modified", property: "date" }
+];
+
 export const Archive = () => {
     const [sortOptions, setSortOptions] = useState({ property: "date", ascending: false });
     const [keywordFilter, setKeywordFilter] = useState("");
@@ -27,12 +32,20 @@ export const Archive = () => {
         window.open(require('../../shared/assets/files/archive/' + fileName).default, '_blank');
     }
 
-    const onSelect = (selectedList) => {
+    const onTagFilterSelect = (selectedList) => {
         setTagFilters(selectedList);
     }
 
-    const onRemove = (selectedList) => {
+    const onTagFilterRemove = (selectedList) => {
         setTagFilters(selectedList);
+    }
+
+    const onSortSelect = (selectedList, selectedItem) => {
+        setSortOptions({ ...sortOptions, property: selectedItem.property });
+    }
+
+    const onSortRemove = (selectedList, selectedItem) => {
+        setSortOptions({ ...sortOptions, property: selectedItem.property });
     }
 
     const comparator = (first, second) => {
@@ -77,19 +90,34 @@ export const Archive = () => {
             <h1>Archive</h1>
             <Container>
                 <Row>
-                    <Form.Control type="text" placeholder="Search keyword" onChange={e => setKeywordFilter(e.target.value)} />
+                    <input type="text" placeholder="Search keyword" onChange={e => setKeywordFilter(e.target.value)} />
                 </Row>
                 <Row>
                     <Multiselect
                         options={uniques}
                         isObject={false}
-                        onSelect={onSelect}
-                        onRemove={onRemove}
+                        onSelect={onTagFilterSelect}
+                        onRemove={onTagFilterRemove}
                         avoidHighlightFirstOption={true}
                         selectedValues={tagFilters}
                         placeholder="Filter tags"
                         hidePlaceholder={true}
                     />
+                </Row>
+                <Row>
+                    Sort by:
+                    <Multiselect
+                        options={sortable}
+                        displayValue="name"
+                        singleSelect={true}
+                        avoidHighlightFirstOption={true}
+                        onSelect={onSortSelect}
+                        onRemove={onSortRemove}
+                        selectedValues={sortable.filter(e => e.property === sortOptions.property)}
+                        placeholder="Sort by"
+                        hidePlaceholder={true}
+                    />
+                    Ascending: <input type="checkbox" checked={sortOptions.ascending} onChange={() => setSortOptions({...sortOptions, ascending: !sortOptions.ascending})} />
                 </Row>
                 <Row xs={1} md={2} lg={3} className="g-4">
                     {archiveData.data.sort(comparator)
