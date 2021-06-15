@@ -5,12 +5,15 @@ import './App.scss';
 import './styles/styles.scss';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ParallaxProvider>
+    <Router>
+      <App />
+    </Router>
+  </ParallaxProvider>,
   document.getElementById('root')
 );
 

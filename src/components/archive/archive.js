@@ -91,7 +91,7 @@ export const Archive = () => {
                 <Container>
                     <Row className="customization-options">
                         <Col className="search-bar" sm={12} lg={6}>
-                            <input type="text" placeholder="Search keyword" onChange={e => setKeywordFilter(e.target.value)} />
+                            <input type="text" placeholder="Search title or description" onChange={e => setKeywordFilter(e.target.value)} />
                         </Col>
                         <Col sm={12} lg={6} className="filter-dropdown">
                             <Multiselect

@@ -7,6 +7,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Container from 'react-bootstrap/Container';
+// import { Parallax } from 'react-scroll-parallax';
 import { formatMonthYear } from '../../utils/dateFormat';
 // import Button from 'react-bootstrap/Button';
 
@@ -105,18 +106,17 @@ export const Home = () => {
                         </Card>
                     </Accordion>
                 </Row>
-
                 <Row className="timeline experience">
                     <h2>Experience</h2>
                     <CardDeck>
-                        {experiences.map(exp => (
+                        {experiences.map((exp, index) => (
                             <Card>
                                 <Card.Header>
                                     <p className="h4">{exp.position + (exp.employer.length > 0 ? ", " + exp.employer : "")}</p>
                                     <p className="h5">{formatMonthYear(exp.startDate) + " — " + (exp.endDate ? formatMonthYear(exp.endDate) : "present")}</p>
                                 </Card.Header>
                                 <Card.Body>
-                                    <p>{exp.description && exp.description.length > 0 ?  exp.description : "Description will be added"}</p>
+                                    <p>{exp.description && exp.description.length > 0 ? exp.description : "Description will be added"}</p>
                                 </Card.Body>
                             </Card>
                         ))}
