@@ -14,10 +14,11 @@ const projectsData = {
             My school's principal wrote a gracious <a href="#">letter</a> and my math teacher decided to use it as the official textbook for the class. I also had the opportunity to present my textbook in front of a group of graduate students and professors, who were visiting our high school while the administration was explaining the school’s math curriculum. </p>`,
             startDate: null,
             endDate: new Date(2019, 2),
-            coverPhoto: "advprecalc.JPG",
+            coverPhoto: "advprecalc-cover.png",
             externalLink: "https://www.amazon.com/dp/0578479435/ref=cm_sw_em_r_mt_dp_U_cnQ.EbRMQZRY3",
             path: "adv-precalc"
-        }, {
+        },
+        {
             title: "BCA Math Team Website",
             preview: "I developed an official website for my high school math team to host files, support dynamic updates, and display blog posts. This conveniently allows coaches to post updates and members to access resources.",
             tags: ["HTML","CSS","JavaScript","Firebase"],
@@ -31,7 +32,8 @@ const projectsData = {
             coverPhoto: "bca-math-team-website.png",
             externalLink: "https://bcamathteam.org/",
             path: "math-team-website"
-        }, {
+        },
+        {
             title: "JHMMC Website",
             preview: "A revamped website for the Joe Holbrook Memorial Math Competition, a school-run event that annually attracts over 400 middle school students in the region.",
             tags: ["HTML","CSS","JavaScript"],
@@ -41,7 +43,8 @@ const projectsData = {
             coverPhoto: "jhmmc-website.png",
             externalLink: "https://github.com/danielkimcs/holbrook-website/",
             path: ""
-        }, {
+        },
+        {
             title: "BS Poker",
             preview: "An implementation of BS Poker as a pass-and-play single-device Python 3 Tkinter application.",
             tags: ["Python"],
@@ -51,7 +54,8 @@ const projectsData = {
             coverPhoto: "bs-poker.png",
             externalLink: "https://github.com/danielkimcs/BS-poker",
             path: ""
-        }, {
+        },
+        {
             title: "LMS Web Scraper",
             preview: "Python scripts using RoboBrowser and BeautifulSoup that scrape information from my high school's learning management system (Schoology) to generate a list of students, teachers, and corresponding classes.",
             tags: ["Python"],

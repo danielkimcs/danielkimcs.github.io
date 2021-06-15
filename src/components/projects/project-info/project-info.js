@@ -2,12 +2,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import './project-info.scss';
 import link from '../../../shared/assets/images/link.svg';
-
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-
-function formatMonthYear(dateObj) {
-    return months[dateObj.getMonth()] + " " + dateObj.getFullYear();
-}
+import { formatMonthYear } from '../../../utils/dateFormat';
 
 export const ProjectInfo = ({ project }) => {
     return (

@@ -37,3 +37,30 @@ body {
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }
+
+
+.tag-container {
+    margin-top: -0.5rem;
+    margin-bottom: 10px;
+
+    .tag {
+        display: inline-block;
+        margin: 5px;
+        border-radius: 10rem;
+        border: 1px solid gray;
+        padding-right: 0.6rem;
+        padding-left: 0.6rem;
+        font-size: 14px;
+    }
+}
+
+.card {
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    -moz-box-shadow: 4px 4px 2px rgba(34, 34, 34, 0.25);
+    -webkit-box-shadow: 4px 4px 2px rgba(34, 34, 34, 0.25);
+    box-shadow: 4px 4px 2px rgba(34, 34, 34, 0.25);
+}
+
