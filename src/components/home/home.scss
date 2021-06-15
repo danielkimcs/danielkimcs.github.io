@@ -5,6 +5,22 @@
         margin-left: 5px;
         float: right;
     }
+
+    .accordion {
+        .card {
+            .btn {
+
+                p {
+                    text-align: left;
+                    color: black;
+                } 
+            }
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 @media (max-width: 550px) {

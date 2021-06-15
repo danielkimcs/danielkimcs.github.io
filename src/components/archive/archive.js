@@ -7,7 +7,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { formatDayMonthYear } from '../../utils/dateFormat';
-import { Form } from 'react-bootstrap';
 
 let uniques = new Set();
 for (const document of archiveData.data) {
