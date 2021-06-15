@@ -13,7 +13,7 @@ export const Projects = () => {
             <div className="projects-container page-container">
                 <h1>Projects</h1>
                 <Container>
-                    <Row xs={1} md={2} className="g-4">
+                    <Row xs={1} lg={2} className="g-4">
                         {projectsData.data.map(project =>
                             <Col>
                                 <Card className="project-div bg-light h-100">
@@ -38,9 +38,9 @@ export const Projects = () => {
                                     </Card.Body>
                                     <Card.Footer>
                                         {project.path && project.path.length > 0 ?
-                                            <NavLink to={"/projects/" + project.path} class="btn btn-dark">Read more</NavLink>
+                                            <NavLink to={"/projects/" + project.path}>Read more</NavLink>
                                             : (project.externalLink && project.externalLink.length > 0 ?
-                                                <a href={project.externalLink} target="_blank" rel="noreferrer noopener" className="btn btn-dark">Check it out</a> : null
+                                                <a href={project.externalLink} target="_blank" rel="noreferrer noopener">Check it out</a> : null
                                             )}
                                     </Card.Footer>
                                 </Card>

@@ -36,7 +36,7 @@ const projectsData = {
         {
             title: "JHMMC Website",
             preview: "A revamped website for the Joe Holbrook Memorial Math Competition, a school-run event that annually attracts over 400 middle school students in the region.",
-            tags: ["HTML","CSS","JavaScript"],
+            tags: ["HTML","CSS"],
             description: "",
             startDate: null,
             endDate: null,
