@@ -16,7 +16,7 @@ const archiveData = {
         },
         {
             title: "Intro to Circles Lecture",
-            tags: ["Math Contests"],
+            tags: ["Handout"],
             date: new Date(2019, 9, 12),
             description: `Notes I wrote for a lecture on the properties of circles that I presented at my high school's math team.`,
             fileName: "MT_Intro_to_Circles_Lecture.pdf"
@@ -50,25 +50,53 @@ const archiveData = {
             fileName: "analytical-calculus.pdf"
         },
         {
-            title: "Review for Test #4: Linear Algebra",
-            tags: ["Course Notes"],
+            title: "Misc. Problems in Linear Algebra",
+            tags: ["Problem Set"],
             date: new Date(2018, 2, 15),
-            description: `A brief problem set with solutions that serves as a review for an upcoming test on the basics of linear algebra for my 10th grade math class "Advanced Precalculus with Discrete Topics."`,
+            description: `A brief problem set with solutions that served as a review for an upcoming test on the basics of linear algebra for my 10th grade math class "Advanced Precalculus with Discrete Topics."`,
             fileName: "Review_for_Linear_Algebra.pdf"
         },
         {
-            title: "Review for Test #2: Sequences, Series, Limits, and Induction",
-            tags: ["Course Notes"],
+            title: "Misc. Problems in Sequences, Series, Limits, and Induction",
+            tags: ["Problem Set"],
             date: new Date(2018, 2, 15),
-            description: `A brief problem set with solutions that serves as a review for an upcoming test on sequences, series, limits, and mathematical induction for my 10th grade math class "Advanced Precalculus with Discrete Topics."`,
+            description: `A brief problem set with solutions that served as a review for an upcoming test on sequences, series, limits, and mathematical induction for my 10th grade math class "Advanced Precalculus with Discrete Topics."`,
             fileName: "Review_for_Test_2.pdf"
         },
         {
             title: "Newton's Forward Difference Formula",
-            tags: ["Math Contests"],
+            tags: ["Handout"],
             date: new Date(2018, 2, 15),
             description: `An introduction to a useful procedure to determine an explicit formula for a given sequence, applicable in math contests.`,
             fileName: "Newton_s_Forward_Difference_Formula.pdf"
+        },
+        {
+            title: "Review of Vectors",
+            tags: ["Problem Set"],
+            date: new Date(2020, 7, 3),
+            description: `Some problems on vectors which cover magnitude, dot product, direction, and some linear combinations.`,
+            fileName: "vectors_review.pdf"
+        },
+        {
+            title: "Personal Math Problem Inventory",
+            tags: ["Problem Set"],
+            date: new Date(2020, 4, 11),
+            description: `A collection of math problems and solutions that I've written over the yearss to be proposed for various math contests.`,
+            fileName: "math_inventory.pdf"
+        },
+        {
+            title: "AP Calculus BC Review Problems",
+            tags: ["Problem Set"],
+            date: new Date(2020, 5, 26),
+            description: `An assortment of problems which cover AP Calculus BC topics, particularly limits, derivatives, and integrals.`,
+            fileName: "BC_review.pdf"
+        },
+        {
+            title: "AMC 10 Geometry Practice",
+            tags: ["Problem Set"],
+            date: new Date(2020, 6, 25),
+            description: `An assortment of geometry problems for AMC 10/12 preparation.`,
+            fileName: "AMC_10_Practice.pdf"
         },
     ]
 };

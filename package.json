@@ -7,14 +7,17 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.1",
+    "gulp": "^4.0.2",
     "html-react-parser": "^1.2.6",
     "multiselect-react-dropdown": "^1.6.13",
     "node-sass": "^4.14.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
+    "react-pdf": "^5.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-scrollmagic": "^2.3.0",
     "react-social-icons": "^5.4.1",
     "react-transition-group": "^4.4.2",
     "web-vitals": "^1.1.2"
@@ -42,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^2.8.335"
   }
 }

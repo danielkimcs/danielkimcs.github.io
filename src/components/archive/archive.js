@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import './archive.scss';
 import { Multiselect } from 'multiselect-react-dropdown';
 import archiveData from '../../shared/archive-data';
-import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import { formatDayMonthYear } from '../../utils/dateFormat';
+import DocumentCard from './document';
 
 let uniques = new Set();
 for (const document of archiveData.data) {
@@ -26,10 +25,6 @@ export const Archive = () => {
     const [sortOptions, setSortOptions] = useState({ property: "date", ascending: false });
     const [keywordFilter, setKeywordFilter] = useState("");
     const [tagFilters, setTagFilters] = useState([]);
-
-    const openDocument = (fileName) => {
-        window.open(require('../../shared/assets/files/archive/' + fileName).default, '_blank');
-    }
 
     const onTagFilterSelect = (selectedList) => {
         setTagFilters(selectedList);
@@ -141,22 +136,7 @@ export const Archive = () => {
                             .filter(filterDocuments)
                             .map(document =>
                                 <Col>
-                                    <Card className="document-card bg-light h-100" onClick={() => openDocument(document.fileName)}>
-                                        <Card.Header>{document.title}</Card.Header>
-                                        <Card.Body>
-                                            <div className="tag-container">
-                                                {document.tags.map((tag) => (
-                                                    <div className="tag">
-                                                        {tag}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                            <Card.Text>{document.description}</Card.Text>
-                                        </Card.Body>
-                                        <Card.Footer>
-                                            {formatDayMonthYear(document.date)}
-                                        </Card.Footer>
-                                    </Card>
+                                    <DocumentCard document={document}></DocumentCard>
                                 </Col>)
                         }
                     </Row>

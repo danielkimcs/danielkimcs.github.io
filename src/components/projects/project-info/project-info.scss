@@ -1,4 +1,9 @@
+@import "../../../styles/variables";
+
 .project-info-container {
+    .project-info-background {
+        background-image: linear-gradient($theme-4, $theme-5, $theme-4);
+    }
     .project-title-container {
         display: flex;
         align-items: center;
