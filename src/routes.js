@@ -6,6 +6,7 @@ import Home from './components/home';
 // import About from './components/about';
 import Projects from './components/projects';
 import Archive from './components/archive';
+import NotFound from './components/not-found';
 
 import projectsData from './shared/projects-data';
 import ProjectInfo from './components/projects/project-info';
@@ -37,6 +38,7 @@ export default function Routes() {
                         {projectsData.data.map((project) => (
                             (project.path && project.path.length > 0) ? <Route key={"/projects/"+project.path} exact path={"/projects/"+project.path} component={() => (<ProjectInfo project={project} />)}/> : null
                         ))}
+                        <Route component={NotFound} />
                     </Switch>
                 </div>
             </CSSTransition >
