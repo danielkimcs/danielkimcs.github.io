@@ -2,7 +2,7 @@
 
 .footer-container {
     position: relative;
-    margin-top: -$footer-height;
+    margin-top: -$footer-height + $footer-margin-top;
     height: $footer-height;
     padding-top: 30px;
     width: 100%;

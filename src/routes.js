@@ -7,10 +7,13 @@ import Home from './components/home';
 import Projects from './components/projects';
 import Archive from './components/archive';
 
+import projectsData from './shared/projects-data';
+import ProjectInfo from './components/projects/project-info';
+
 const routes = [
     { path: '/', name: "Home", Component: Home },
     { path: '/archive', name: "Archive", Component: Archive },
-    { path: '/projects', name: "Projects", Component: Projects },
+    { path: '/projects', name: "Projects", Component: Projects }
 ]
 
 export default function Routes() {
@@ -31,6 +34,9 @@ export default function Routes() {
                         {routes.map(({ path, Component }) => (
                             <Route key={path} exact path={path} component={Component} />
                             ))}
+                        {projectsData.data.map((project) => (
+                            (project.path && project.path.length > 0) ? <Route key={"/projects/"+project.path} exact path={"/projects/"+project.path} component={() => (<ProjectInfo project={project} />)}/> : null
+                        ))}
                     </Switch>
                 </div>
             </CSSTransition >

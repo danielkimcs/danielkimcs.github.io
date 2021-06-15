@@ -1,0 +1,32 @@
+.projects-container {
+    .project-div {
+        // margin: 10px 0 10px 0;
+
+        .card-img-top {
+            height: 40vw;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        @media (max-width: 550px) {
+            .card-img-top {
+                object-fit: cover;
+            }
+        }
+
+        .project-tag-container {
+            margin-top: -0.5rem;
+            margin-bottom: 10px;
+
+            .project-tag {
+                display: inline-block;
+                margin: 5px;
+                border-radius: 10rem;
+                border: 1px solid gray;
+                padding-right: 0.6rem;
+                padding-left: 0.6rem;
+                font-size: 14px;
+            }
+        }
+    }
+}

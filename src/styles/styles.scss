@@ -12,9 +12,10 @@ body {
 
 .page-container {
     width: 100%;
-    margin: 0 auto;
-    min-height: 100vh;
-    overflow: auto;
+    // margin: 0 auto;
+    min-height: calc(100vh - #{$footer-height} + #{$navbar-height});
+    overflow-y: auto;
+    overflow-x: hidden;
     padding-bottom: $footer-height;
 }
 
