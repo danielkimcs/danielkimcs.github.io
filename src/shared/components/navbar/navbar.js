@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.scss';
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import resume from "../../assets/files/resume.pdf";
 
 export const Navigation = () => {
     return (
@@ -22,7 +23,8 @@ export const Navigation = () => {
                             <NavLink to="/archive" exact activeClassName="activeLink">Archive</NavLink>
                         </Navbar.Brand>
                         <Navbar.Brand>
-                            <NavLink to="#">Resume</NavLink>
+                            <a href={resume} target="_blank" rel="noreferrer">Resume</a>
+                            {/* <NavLink to="#">Resume</NavLink> */}
                         </Navbar.Brand>
                     </Nav>
                 </Navbar.Collapse>

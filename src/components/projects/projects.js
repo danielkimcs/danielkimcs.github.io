@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 
 let coverLinks = projectsData.data.filter(project => project.coverPhoto && project.coverPhoto.length > 0).map(project => require("../../shared/assets/images/" + project.coverPhoto).default);
 
+
 export const Projects = () => {
     useEffect(() => {
         coverLinks.forEach((link) => {

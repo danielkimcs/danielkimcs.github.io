@@ -16,7 +16,7 @@ const archiveData = {
         },
         {
             title: "Intro to Circles Lecture",
-            tags: ["Handout"],
+            tags: ["Handout", "Math Contests"],
             date: new Date(2019, 9, 12),
             description: `Notes I wrote for a lecture on the properties of circles that I presented at my high school's math team.`,
             fileName: "MT_Intro_to_Circles_Lecture.pdf"
@@ -65,7 +65,7 @@ const archiveData = {
         },
         {
             title: "Newton's Forward Difference Formula",
-            tags: ["Handout"],
+            tags: ["Handout", "Math Contests"],
             date: new Date(2018, 2, 15),
             description: `An introduction to a useful procedure to determine an explicit formula for a given sequence, applicable in math contests.`,
             fileName: "Newton_s_Forward_Difference_Formula.pdf"
@@ -79,7 +79,7 @@ const archiveData = {
         },
         {
             title: "Personal Math Problem Inventory",
-            tags: ["Problem Set"],
+            tags: ["Problem Set", "Math Contests"],
             date: new Date(2020, 4, 11),
             description: `A collection of math problems and solutions that I've written over the yearss to be proposed for various math contests.`,
             fileName: "math_inventory.pdf"
@@ -93,7 +93,7 @@ const archiveData = {
         },
         {
             title: "AMC 10 Geometry Practice",
-            tags: ["Problem Set"],
+            tags: ["Problem Set", "Math Contests"],
             date: new Date(2020, 6, 25),
             description: `An assortment of geometry problems for AMC 10/12 preparation.`,
             fileName: "AMC_10_Practice.pdf"
