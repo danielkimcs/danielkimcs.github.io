@@ -2,7 +2,7 @@ const archiveData = {
     data: [
         {
             title: "2020 HMMT Lecture Notes",
-            tags: ["Course Notes"],
+            tags: ["Course Notes", "Calculus"],
             date: new Date(2020, 1, 16),
             description: `Notes I took from the Sunday lecture series of the 2020 February Harvard-MIT Mathematics Tournament. Introduces complex analysis (contour integrals) and advanced integration techniques.`,
             fileName: "hmmt-2020.pdf"
@@ -44,14 +44,14 @@ const archiveData = {
         },
         {
             title: "Analytical Calculus",
-            tags: ["Course Notes"],
+            tags: ["Course Notes", "Calculus"],
             date: new Date(2019, 3, 24),
             description: `Course notes from "AP Analytical Calculus BC+," a class I took in 11th grade that covers AP Calculus BC topics and beyond from a theoretical, proof-based perspective.`,
             fileName: "analytical-calculus.pdf"
         },
         {
             title: "Misc. Problems in Linear Algebra",
-            tags: ["Problem Set"],
+            tags: ["Problem Set", "Linear Algebra"],
             date: new Date(2018, 2, 15),
             description: `A brief problem set with solutions that served as a review for an upcoming test on the basics of linear algebra for my 10th grade math class "Advanced Precalculus with Discrete Topics."`,
             fileName: "Review_for_Linear_Algebra.pdf"
@@ -72,7 +72,7 @@ const archiveData = {
         },
         {
             title: "Review of Vectors",
-            tags: ["Problem Set"],
+            tags: ["Problem Set", "Linear Algebra"],
             date: new Date(2020, 7, 3),
             description: `Some problems on vectors which cover magnitude, dot product, direction, and some linear combinations.`,
             fileName: "vectors_review.pdf"
@@ -86,7 +86,7 @@ const archiveData = {
         },
         {
             title: "AP Calculus BC Review Problems",
-            tags: ["Problem Set"],
+            tags: ["Problem Set", "Calculus"],
             date: new Date(2020, 5, 26),
             description: `An assortment of problems which cover AP Calculus BC topics, particularly limits, derivatives, and integrals.`,
             fileName: "BC_review.pdf"
