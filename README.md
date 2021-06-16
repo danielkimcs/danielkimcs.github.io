@@ -1,5 +1,7 @@
 # Daniel Kim's Personal Website
 
+Written from scratch in ReactJS using frameworks like React Bootstrap.
+
 Production branch: `master`
 
 ## Deployment

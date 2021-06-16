@@ -81,7 +81,7 @@ const archiveData = {
             title: "Personal Math Problem Inventory",
             tags: ["Problem Set", "Math Contests"],
             date: new Date(2020, 4, 11),
-            description: `A collection of math problems and solutions that I've written over the yearss to be proposed for various math contests.`,
+            description: `A collection of math problems and solutions that I've written over the years to be proposed for various math contests.`,
             fileName: "math_inventory.pdf"
         },
         {
