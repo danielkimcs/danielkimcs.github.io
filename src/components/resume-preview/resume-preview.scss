@@ -1,0 +1,30 @@
+.resume-container-wrapper {
+    @media screen and (min-width: 990px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .resume-container {
+        .react-pdf__Document { 
+            display: flex; 
+            justify-content: center; 
+            width: 100%;
+        }
+    }
+}
+
+.resume-btn-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    a {
+        background-color: #3C403D;
+        color: #DADED4;
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+}

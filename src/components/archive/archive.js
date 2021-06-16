@@ -110,6 +110,7 @@ export const Archive = () => {
                                         options={sortable}
                                         displayValue="name"
                                         singleSelect={true}
+                                        closeOnSelect={true}
                                         avoidHighlightFirstOption={true}
                                         onSelect={onSortSelect}
                                         onRemove={onSortRemove}

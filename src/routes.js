@@ -7,6 +7,7 @@ import Home from './components/home';
 import Projects from './components/projects';
 import Archive from './components/archive';
 import NotFound from './components/not-found';
+import ResumePreview from './components/resume-preview';
 
 import projectsData from './shared/projects-data';
 import ProjectInfo from './components/projects/project-info';
@@ -14,7 +15,8 @@ import ProjectInfo from './components/projects/project-info';
 const routes = [
     { path: '/', name: "Home", Component: Home },
     { path: '/archive', name: "Archive", Component: Archive },
-    { path: '/projects', name: "Projects", Component: Projects }
+    { path: '/projects', name: "Projects", Component: Projects },
+    { path: '/resume', name: "Resume", Component: ResumePreview },
 ]
 
 export default function Routes() {
