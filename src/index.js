@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './App.scss';
 import './styles/styles.scss';
 import App from './App';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 // import { ParallaxProvider } from 'react-scroll-parallax';
 import reportWebVitals from './reportWebVitals';
 

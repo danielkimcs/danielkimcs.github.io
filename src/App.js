@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import Routes from "./routes";
 
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { HashRouter as Router, useLocation } from "react-router-dom";
 // import { AppContext } from "./utils/contextLib";
 import Navigation from "./shared/components/navbar";
 import Footer from "./shared/components/footer";
