@@ -6,7 +6,6 @@ import { Document, Page, pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export const ResumePreview = () => {
-    // const [numPages, setNumPages] = useState(null);
     const [containerWidth, setContainerWidth] = useState(-1);
 
     const ref = useRef();
@@ -15,7 +14,7 @@ export const ResumePreview = () => {
         if (ref.current) {
             setContainerWidth(ref.current.offsetWidth);
         }
-    }, [ref.current]);
+    }, [ref]);
 
     return (
         <Container className="page-container">

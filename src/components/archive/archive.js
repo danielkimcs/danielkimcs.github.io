@@ -6,6 +6,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import DocumentCard from './document-card';
+import { useAppContext } from "../../utils/contextLib";
+
+const sortable = [
+    { name: "Title", property: "title" },
+    { name: "Date Modified", property: "date" }
+];
+
+let loadedSortable = [...sortable, { name: "Number of Pages", property: "numPages" }];
 
 let uniques = new Set();
 for (const document of archiveData.data) {
@@ -16,15 +24,12 @@ for (const document of archiveData.data) {
 
 uniques = [...uniques];
 
-const sortable = [
-    { name: "Title", property: "title" },
-    { name: "Date Modified", property: "date" }
-];
-
 export const Archive = () => {
     const [sortOptions, setSortOptions] = useState({ property: "date", ascending: false });
     const [keywordFilter, setKeywordFilter] = useState("");
     const [tagFilters, setTagFilters] = useState([]);
+    const appContext = useAppContext();
+    const documents = appContext.documents;
 
     const onTagFilterSelect = (selectedList) => {
         setTagFilters(selectedList);
@@ -50,8 +55,7 @@ export const Archive = () => {
                 key = first[attr].localeCompare(second[attr]);
                 break;
             case "date": // Descending dates = most recent to least recent
-                key = first[attr] - second[attr];
-                break;
+            case "numPages":
             default:
                 key = first[attr] - second[attr];
                 break;
@@ -107,21 +111,23 @@ export const Archive = () => {
                                 </Col>
                                 <Col xs={10}>
                                     <Multiselect
-                                        options={sortable}
+                                        options={appContext.done ? loadedSortable : sortable}
                                         displayValue="name"
                                         singleSelect={true}
                                         closeOnSelect={true}
                                         avoidHighlightFirstOption={true}
                                         onSelect={onSortSelect}
                                         onRemove={onSortRemove}
-                                        selectedValues={sortable.filter(e => e.property === sortOptions.property)}
+                                        selectedValues={appContext.done ?
+                                            loadedSortable.filter(e => e.property === sortOptions.property)
+                                            : sortable.filter(e => e.property === sortOptions.property)}
                                         placeholder="Sort by"
                                         hidePlaceholder={true}
                                     />
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={{ span: 6, offset: 3 }} md={{span: 3, offset: 0}} lg={{span: 2, offset: 0}} className="ascending-checkbox">
+                        <Col xs={{ span: 6, offset: 3 }} md={{ span: 3, offset: 0 }} lg={{ span: 2, offset: 0 }} className="ascending-checkbox">
                             <p>
                                 Ascending:
                             </p>
@@ -133,10 +139,10 @@ export const Archive = () => {
                         </Col>
                     </Row>
                     <Row xs={1} md={2} xl={3} className="card-row g-4">
-                        {archiveData.data.sort(comparator)
-                            .filter(filterDocuments)
+                        {documents.filter(filterDocuments)
+                            .sort(comparator)
                             .map((document, index) =>
-                                <Col key={document.fileName+index}>
+                                <Col key={document.fileName + index}>
                                     <DocumentCard document={document}></DocumentCard>
                                 </Col>)
                         }
