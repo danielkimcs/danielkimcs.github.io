@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8ba00255.chunk.css",
-    "main.js": "/static/js/main.df19cc9d.chunk.js",
-    "main.js.map": "/static/js/main.df19cc9d.chunk.js.map",
+    "main.js": "/static/js/main.fb596a31.chunk.js",
+    "main.js.map": "/static/js/main.fb596a31.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.85301a3b.js",
     "runtime-main.js.map": "/static/js/runtime-main.85301a3b.js.map",
     "static/js/2.dbd31a2f.chunk.js": "/static/js/2.dbd31a2f.chunk.js",
@@ -38,6 +38,7 @@
     "static/media/math_inventory.pdf": "/static/media/math_inventory.7212694e.pdf",
     "static/media/me.jpg": "/static/media/me.8477efce.jpg",
     "static/media/principal_letter.fa7a1379.pdf": "/static/media/principal_letter.fa7a1379.pdf",
+    "static/media/resume.f76c5827.pdf": "/static/media/resume.f76c5827.pdf",
     "static/media/resume.pdf": "/static/media/resume.fd72d4db.pdf",
     "static/media/vectors_review.pdf": "/static/media/vectors_review.50e93e29.pdf"
   },
@@ -45,6 +46,6 @@
     "static/js/runtime-main.85301a3b.js",
     "static/js/2.dbd31a2f.chunk.js",
     "static/css/main.8ba00255.chunk.css",
-    "static/js/main.df19cc9d.chunk.js"
+    "static/js/main.fb596a31.chunk.js"
   ]
 }
