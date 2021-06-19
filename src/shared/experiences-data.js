@@ -22,7 +22,7 @@ const experiencesData = {
             startDate: new Date(2019, 8),
             endDate: new Date(2020, 4),
             location: "Piscataway, NJ",
-            description: "Under the mentorship of Dr. Daniel Balouek-Thomert, I studied stream processing between the edge and the cloud. I automated deployment of nodes over remote resources via Python on Grid'5000 (a testbed for experiment-driven research), ran experiments with R-Pulsar (an Edge Framework developed by RDI2), and analyzed datasets via batch processing (Python - Numpy) and stream processing (Apache Flink). I learned a lot about computer networks, distributed systems, and cloud computing."
+            description: "Under the mentorship of Dr. Daniel Balouek-Thomert, I studied stream processing between the edge and the cloud. I automated deployment of resources (operating systems, scripts, applications) via Python on Grid'5000 (a testbed for experiment-driven research), ran experiments with R-Pulsar (an Edge Framework developed by RDI2), and analyzed datasets via batch processing (Python - NumPy) and stream processing (Apache Flink)."
         },
         {
             position: "Private Mathematics Tutor",
