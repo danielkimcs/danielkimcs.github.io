@@ -1,6 +1,17 @@
 const projectsData = {
     data: [
         {
+            title: "Chinese Hearts Web App",
+            preview: "An implementation of Chinese Hearts, a 4-player trick-taking card game variation of Hearts, as an online multiplayer game supporting private game rooms. Built on a React frontend and NodeJS/Express/Socket.IO backend.",
+            tags: ["Python", "React", "NodeJS", "Express"],
+            description: "",
+            startDate: null,
+            endDate: new Date(2021, 7),
+            coverPhoto: "chinese-hearts-thumbnail-min.png",
+            externalLink: "https://chinesehearts.herokuapp.com/",
+            path: ""
+        },
+        {
             title: "Advanced Precalculus",
             preview: "A 353-page textbook covering precalculus and introductory calculus concepts from a proof-based perspective. It has been incorporated into my high school's math curriculum and is currently used as the main resource for a math course.",
             tags: ["LaTeX"],

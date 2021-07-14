@@ -25,7 +25,7 @@ export const Projects = () => {
                     <Row xs={1} lg={2} className="g-4">
                         {projectsData.data.map(project =>
                             <Col key={project.title}>
-                                <Card className="project-div bg-light h-100">
+                                <Card className="project-div bg-light h-70">
                                     {project.coverPhoto && project.coverPhoto.length > 0 ?
                                         (project.externalLink.length > 0 ?
                                             <a href={project.externalLink} target="_blank" rel="noreferrer noopener">
