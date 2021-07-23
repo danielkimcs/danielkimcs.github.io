@@ -7,6 +7,9 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import DocumentCard from './document-card';
 import { useAppContext } from "../../utils/contextLib";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-88938949-5');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const sortable = [
     { name: "Title", property: "title" },

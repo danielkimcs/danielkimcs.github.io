@@ -15,6 +15,10 @@ import { formatMonthYear } from '../../utils/dateFormat';
 import profilePic from '../../shared/assets/images/me.jpg';
 // import Button from 'react-bootstrap/Button';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-88938949-5');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 let experiences = experiencesData.data;
 
 // Add sorting for experiences

@@ -7,6 +7,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-88938949-5');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 let coverLinks = projectsData.data.filter(project => project.coverPhoto && project.coverPhoto.length > 0).map(project => require("../../shared/assets/images/" + project.coverPhoto).default);
 
 
