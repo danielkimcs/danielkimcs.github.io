@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.scss';
 // import projectsData from '../../shared/projects-data';
 // import archiveData from '../../shared/archive-data';
@@ -17,7 +17,6 @@ import profilePic from '../../shared/assets/images/me.jpg';
 
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-88938949-5');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 let experiences = experiencesData.data;
 
@@ -25,6 +24,10 @@ let experiences = experiencesData.data;
 // First by end date, then start date, then title
 
 export const Home = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    });
+
     return (
         <div className="home-container page-container">
             <Controller>

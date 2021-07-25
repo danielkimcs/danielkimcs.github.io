@@ -9,13 +9,13 @@ import Container from 'react-bootstrap/Container';
 
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-88938949-5');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 let coverLinks = projectsData.data.filter(project => project.coverPhoto && project.coverPhoto.length > 0).map(project => require("../../shared/assets/images/" + project.coverPhoto).default);
 
 
 export const Projects = () => {
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
         coverLinks.forEach((link) => {
             new Image().src = link;
         });

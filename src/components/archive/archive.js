@@ -8,8 +8,8 @@ import Container from 'react-bootstrap/Container';
 import DocumentCard from './document-card';
 import { useAppContext } from "../../utils/contextLib";
 import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 ReactGA.initialize('UA-88938949-5');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const sortable = [
     { name: "Title", property: "title" },
@@ -85,6 +85,10 @@ export const Archive = () => {
         }
         return true;
     }
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    });
 
     return (
         <Container>
