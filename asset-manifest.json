@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8ba00255.chunk.css",
-    "main.js": "/static/js/main.71b0dada.chunk.js",
-    "main.js.map": "/static/js/main.71b0dada.chunk.js.map",
+    "main.js": "/static/js/main.e20dfd8c.chunk.js",
+    "main.js.map": "/static/js/main.e20dfd8c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ebce82bb.js",
     "runtime-main.js.map": "/static/js/runtime-main.ebce82bb.js.map",
     "static/js/2.e3be6cf3.chunk.js": "/static/js/2.e3be6cf3.chunk.js",
@@ -39,14 +39,14 @@
     "static/media/math_inventory.pdf": "/static/media/math_inventory.7212694e.pdf",
     "static/media/me.jpg": "/static/media/me.8477efce.jpg",
     "static/media/principal_letter.fa7a1379.pdf": "/static/media/principal_letter.fa7a1379.pdf",
-    "static/media/resume.1d5ac06f.pdf": "/static/media/resume.1d5ac06f.pdf",
     "static/media/resume.pdf": "/static/media/resume.fd72d4db.pdf",
+    "static/media/resume.fe15a9e2.pdf": "/static/media/resume.fe15a9e2.pdf",
     "static/media/vectors_review.pdf": "/static/media/vectors_review.50e93e29.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.ebce82bb.js",
     "static/js/2.e3be6cf3.chunk.js",
     "static/css/main.8ba00255.chunk.css",
-    "static/js/main.71b0dada.chunk.js"
+    "static/js/main.e20dfd8c.chunk.js"
   ]
 }
