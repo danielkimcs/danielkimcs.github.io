@@ -38,7 +38,7 @@ export const Home = () => {
                             <Row>
                                 <p className="lead">
                                     <img className="avatar" src={profilePic} alt="Me" />
-                                    I'm a sophomore at <a href="https://www.yale.edu/">Yale University</a> interested in computer science, economics, and mathematics. For the summer, I'm a full stack software engineer intern at <a href="https://www.gosite.com/">GoSite</a>, a Series B startup developing cloud based technology to empower small businesses. At Yale, I help build infrastructure for the <a href="https://www.internships.yesatyale.org/">YES Internship Program</a> using ReactJS and Amazon Web Services. I've also written lots of <NavLink to={"/archive"}>math notes</NavLink>, including a <NavLink to={"/projects/adv-precalc"}>textbook</NavLink> on proof-based precalculus and introductory calculus concepts.
+                                    I'm a sophomore at <a href="https://www.yale.edu/">Yale University</a> interested in computer science, economics, and mathematics. This past summer, I was a full stack software engineer intern at <a href="https://www.gosite.com/">GoSite</a>, a Series B startup developing cloud based technology to empower small businesses. At Yale, I help build infrastructure for the <a href="https://www.internships.yesatyale.org/">YES Internship Program</a> using ReactJS and Amazon Web Services. I've also written lots of <NavLink to={"/archive"}>math notes</NavLink>, including a <NavLink to={"/projects/adv-precalc"}>textbook</NavLink> on proof-based precalculus and introductory calculus concepts.
                                     <br /><br />
                                     You can contact me at <a href="mailto:dan.kim@yale.edu">dan.kim@yale.edu</a> or find me on <a href="https://www.linkedin.com/in/danielkim119/">LinkedIn</a>.
                                 </p>
@@ -64,7 +64,7 @@ export const Home = () => {
                                     <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <p>
-                                                <span>Coursework:</span> Artificial Intelligence (CPSC 470), Data Structures and Programming Techniques (CPSC 223), Introductory Macroeconomics (ECON 116), Introductory Microeconomics (ECON 115), Systems Programming and Computer Organization (CPSC 323)
+                                                <span>Coursework:</span> Big Data Systems: Trends &amp; Challenges (CPSC 438), Artificial Intelligence (CPSC 470), Data Structures and Programming Techniques (CPSC 223), Systems Programming and Computer Organization (CPSC 323), Microeconomic Theory (ECON 125), Probability Theory (MATH 241), Discrete Mathematics (MATH 244), Vector Calculus and Linear Algebra (MATH 230/231)
                                             </p>
                                         </Card.Body>
                                     </Accordion.Collapse>
