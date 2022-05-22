@@ -38,9 +38,9 @@ export const Home = () => {
                             <Row>
                                 <p className="lead">
                                     <img className="avatar" src={profilePic} alt="Me" />
-                                    I'm a sophomore at <a href="https://www.yale.edu/">Yale University</a> interested in computer science, economics, and mathematics. This past summer, I was a full stack software engineer intern at <a href="https://www.gosite.com/">GoSite</a>, a Series B startup developing cloud based technology to empower small businesses. At Yale, I help build infrastructure for the <a href="https://www.internships.yesatyale.org/">YES Internship Program</a> using ReactJS and Amazon Web Services. I've also written lots of <NavLink to={"/archive"}>math notes</NavLink>, including a <NavLink to={"/projects/adv-precalc"}>textbook</NavLink> on proof-based precalculus and introductory calculus concepts.
+                                    I'm a rising junior at <a href="https://www.yale.edu/">Yale University</a> studying in computer science and mathematics, with broad interests in full stack web development and data science. This summer, I'll be a software engineer intern at <a href="https://about.facebook.com/">Meta (Facebook)</a> in Menlo Park, CA. At Yale, I help build infrastructure for the <a href="https://www.internships.yesatyale.org/">YES Internship Program</a> using ReactJS and Amazon Web Services. I've also written lots of <NavLink to={"/archive"}>math notes</NavLink>, including a <NavLink to={"/projects/adv-precalc"}>textbook</NavLink> on proof-based precalculus and introductory calculus concepts.
                                     <br /><br />
-                                    You can contact me at <a href="mailto:dan.kim@yale.edu">dan.kim@yale.edu</a> or find me on <a href="https://www.linkedin.com/in/danielkim119/">LinkedIn</a>.
+                                    You can contact me at <a href="mailto:dan.kim@yale.edu">dan.kim@yale.edu</a> or connect on <a href="https://www.linkedin.com/in/danielkim119/">LinkedIn</a>!
                                 </p>
                             </Row>
                         </div>
@@ -57,14 +57,14 @@ export const Home = () => {
                                 <Card>
                                     <Card.Header>
                                         <Accordion.Toggle eventKey="0">
-                                            <p className="h4">Bachelor of Science in Computer Science and Economics</p>
+                                            <p className="h4">Bachelor of Science in Computer Science, Mathematics</p>
                                             <p className="h5">Yale University, September 2020 – May 2024</p>
                                         </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <p>
-                                                <span>Coursework:</span> Big Data Systems: Trends &amp; Challenges (CPSC 438), Artificial Intelligence (CPSC 470), Data Structures and Programming Techniques (CPSC 223), Systems Programming and Computer Organization (CPSC 323), Microeconomic Theory (ECON 125), Probability Theory (MATH 241), Discrete Mathematics (MATH 244), Vector Calculus and Linear Algebra (MATH 230/231)
+                                                <span>Coursework:</span> Intensive Algorithms, Quantum Computing, Big Data Systems: Trends &amp; Challenges, Systems Programming and Computer Organization, Artificial Intelligence, Data Structures and Programming Techniques, Theory of Statistics, Probability Theory, Discrete Mathematics, Real Analysis, Vector Calculus and Linear Algebra
                                             </p>
                                         </Card.Body>
                                     </Accordion.Collapse>
