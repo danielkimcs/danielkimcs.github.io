@@ -1,20 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.44642cc6.chunk.css",
-    "main.js": "/static/js/main.37b07a9a.chunk.js",
-    "main.js.map": "/static/js/main.37b07a9a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cd8febf4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cd8febf4.js.map",
-    "static/js/2.4bb17772.chunk.js": "/static/js/2.4bb17772.chunk.js",
-    "static/js/2.4bb17772.chunk.js.map": "/static/js/2.4bb17772.chunk.js.map",
-    "static/js/3.7047e9d1.chunk.js": "/static/js/3.7047e9d1.chunk.js",
-    "static/js/3.7047e9d1.chunk.js.map": "/static/js/3.7047e9d1.chunk.js.map",
+    "main.js": "/static/js/main.1e244e83.chunk.js",
+    "main.js.map": "/static/js/main.1e244e83.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f21f6820.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f21f6820.js.map",
+    "static/js/2.3c7a38f4.chunk.js": "/static/js/2.3c7a38f4.chunk.js",
+    "static/js/2.3c7a38f4.chunk.js.map": "/static/js/2.3c7a38f4.chunk.js.map",
+    "static/js/3.45a16c0d.chunk.js": "/static/js/3.45a16c0d.chunk.js",
+    "static/js/3.45a16c0d.chunk.js.map": "/static/js/3.45a16c0d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.44642cc6.chunk.css.map": "/static/css/main.44642cc6.chunk.css.map",
-    "static/js/2.4bb17772.chunk.js.LICENSE.txt": "/static/js/2.4bb17772.chunk.js.LICENSE.txt",
+    "static/js/2.3c7a38f4.chunk.js.LICENSE.txt": "/static/js/2.3c7a38f4.chunk.js.LICENSE.txt",
     "static/media/AMC_10_Practice.pdf": "/static/media/AMC_10_Practice.4e056a9e.pdf",
     "static/media/BC_review.pdf": "/static/media/BC_review.9bd13fb4.pdf",
     "static/media/Data_Structures_Notes.pdf": "/static/media/Data_Structures_Notes.356c3ab4.pdf",
+    "static/media/MATH_241_Results.pdf": "/static/media/MATH_241_Results.2b696628.pdf",
+    "static/media/MATH_244_Results.pdf": "/static/media/MATH_244_Results.a7ace184.pdf",
+    "static/media/MATH_305_Notes.pdf": "/static/media/MATH_305_Notes.49d459ea.pdf",
     "static/media/MT_Intro_to_Circles_Lecture.pdf": "/static/media/MT_Intro_to_Circles_Lecture.933b4afe.pdf",
     "static/media/Newton_s_Forward_Difference_Formula.pdf": "/static/media/Newton_s_Forward_Difference_Formula.8c196345.pdf",
     "static/media/Point_Set_Topology_Notes.pdf": "/static/media/Point_Set_Topology_Notes.dc4ba917.pdf",
@@ -46,9 +49,9 @@
     "static/media/vectors_review.pdf": "/static/media/vectors_review.50e93e29.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.cd8febf4.js",
-    "static/js/2.4bb17772.chunk.js",
+    "static/js/runtime-main.f21f6820.js",
+    "static/js/2.3c7a38f4.chunk.js",
     "static/css/main.44642cc6.chunk.css",
-    "static/js/main.37b07a9a.chunk.js"
+    "static/js/main.1e244e83.chunk.js"
   ]
 }
