@@ -22,9 +22,9 @@ export const Navigation = () => {
                         <Navbar.Brand>
                             <NavLink onClick={() => setExpanded(false)} to="/archive" exact activeClassName="activeLink">Archive</NavLink>
                         </Navbar.Brand>
-                        <Navbar.Brand>
+                        {/* <Navbar.Brand>
                             <NavLink onClick={() => setExpanded(false)} to="/resume" exact activeClassName="activeLink">Resume</NavLink>
-                        </Navbar.Brand>
+                        </Navbar.Brand> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
