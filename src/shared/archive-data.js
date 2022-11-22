@@ -1,14 +1,35 @@
 const archiveData = {
     data: [
         {
+            title: "Intro to Real Analysis",
+            tags: ["Course Notes", "Undergraduate"],
+            date: new Date(2022, 4, 11),
+            description: `Basic results from Yale's MATH 305: Lebesgue Integration and Fourier Series taught by Prof. Hee Oh.`,
+            fileName: "MATH_305_Notes.pdf"
+        },
+        {
+            title: "Intro to Discrete Math",
+            tags: ["Course Notes", "Undergraduate"],
+            date: new Date(2021, 11, 20),
+            description: `Basic results from Yale's MATH 244: Discrete Mathematics at Yale College taught by Prof. Richard Kenyon.`,
+            fileName: "MATH_244_Results.pdf"
+        },
+        {
+            title: "Intro to Probability Theory",
+            tags: ["Course Notes", "Undergraduate"],
+            date: new Date(2021, 11, 19),
+            description: `Basic results from Yale's MATH 241: Probability Theory taught by Prof. Yihong Wu. Skips basic definitions on probability measures and expectation.`,
+            fileName: "MATH_241_Results.pdf"
+        },
+        {
             title: "2020 HMMT Lecture Notes",
-            tags: ["Course Notes", "Calculus"],
+            tags: ["Course Notes", "Calculus"], 
             date: new Date(2020, 1, 16),
             description: `Notes I took from the Sunday lecture series of the 2020 February Harvard-MIT Mathematics Tournament. Introduces complex analysis (contour integrals) and advanced integration techniques.`,
             fileName: "hmmt-2020.pdf"
         },
         {
-            title: "Point Set Topology Notes",
+            title: "Intro to Point Set Topology",
             tags: ["Course Notes"],
             date: new Date(2019, 10, 22),
             description: `Brief notes on the basics of point set topology from a 12th grade math class on proof-based multivariable calculus and linear algebra.`,
