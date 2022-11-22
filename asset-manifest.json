@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.e33dc961.chunk.css",
-    "main.js": "/static/js/main.652f7516.chunk.js",
-    "main.js.map": "/static/js/main.652f7516.chunk.js.map",
+    "main.css": "/static/css/main.2a6992c7.chunk.css",
+    "main.js": "/static/js/main.65f1f495.chunk.js",
+    "main.js.map": "/static/js/main.65f1f495.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.880c6bcc.js",
     "runtime-main.js.map": "/static/js/runtime-main.880c6bcc.js.map",
-    "static/js/2.f102b58d.chunk.js": "/static/js/2.f102b58d.chunk.js",
-    "static/js/2.f102b58d.chunk.js.map": "/static/js/2.f102b58d.chunk.js.map",
+    "static/js/2.8349a4f9.chunk.js": "/static/js/2.8349a4f9.chunk.js",
+    "static/js/2.8349a4f9.chunk.js.map": "/static/js/2.8349a4f9.chunk.js.map",
     "static/js/3.107df697.chunk.js": "/static/js/3.107df697.chunk.js",
     "static/js/3.107df697.chunk.js.map": "/static/js/3.107df697.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e33dc961.chunk.css.map": "/static/css/main.e33dc961.chunk.css.map",
-    "static/js/2.f102b58d.chunk.js.LICENSE.txt": "/static/js/2.f102b58d.chunk.js.LICENSE.txt",
+    "static/css/main.2a6992c7.chunk.css.map": "/static/css/main.2a6992c7.chunk.css.map",
+    "static/js/2.8349a4f9.chunk.js.LICENSE.txt": "/static/js/2.8349a4f9.chunk.js.LICENSE.txt",
     "static/media/AMC_10_Practice.pdf": "/static/media/AMC_10_Practice.4e056a9e.pdf",
     "static/media/BC_review.pdf": "/static/media/BC_review.9bd13fb4.pdf",
     "static/media/Data_Structures_Notes.pdf": "/static/media/Data_Structures_Notes.356c3ab4.pdf",
@@ -39,14 +39,13 @@
     "static/media/math_inventory.pdf": "/static/media/math_inventory.7212694e.pdf",
     "static/media/me.jpg": "/static/media/me.8477efce.jpg",
     "static/media/principal_letter.fa7a1379.pdf": "/static/media/principal_letter.fa7a1379.pdf",
-    "static/media/resume.7737e363.pdf": "/static/media/resume.7737e363.pdf",
     "static/media/resume.pdf": "/static/media/resume.fd72d4db.pdf",
     "static/media/vectors_review.pdf": "/static/media/vectors_review.50e93e29.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.880c6bcc.js",
-    "static/js/2.f102b58d.chunk.js",
-    "static/css/main.e33dc961.chunk.css",
-    "static/js/main.652f7516.chunk.js"
+    "static/js/2.8349a4f9.chunk.js",
+    "static/css/main.2a6992c7.chunk.css",
+    "static/js/main.65f1f495.chunk.js"
   ]
 }
