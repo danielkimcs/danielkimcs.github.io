@@ -2,7 +2,7 @@ const projectsData = {
     data: [
         {
             title: "Chinese Hearts Web App",
-            preview: "An implementation of Chinese Hearts, a 4-player trick-taking card game variation of Hearts, as an online multiplayer game supporting private game rooms. Built on a React frontend and NodeJS/Express/Socket.IO backend.",
+            preview: "An implementation of Chinese Hearts, a 4-player trick-taking card game variation of Hearts, as an online multiplayer game supporting private game rooms. Built on a React + Redux frontend and NodeJS/Express + WebSockets backend.",
             tags: ["Python", "React", "NodeJS", "Express"],
             description: "",
             startDate: null,

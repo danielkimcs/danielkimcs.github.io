@@ -133,6 +133,17 @@
         .exp-location {
             float: right;
         }
+
+        .exp-image {
+            width: 64px;
+            height: 64px;
+        }
+
+        .exp-image {
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
