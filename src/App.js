@@ -5,7 +5,9 @@ import { AppContext } from "./utils/contextLib";
 import Navigation from "./shared/components/navbar";
 import Footer from "./shared/components/footer";
 import archiveData from "./shared/archive-data";
-import { Document } from 'react-pdf';
+import { Document, pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const RenderDocuments = ({documents, onDocumentLoadSuccess}) => {
   return (documents.map((doc, index) => ("numPages" in doc && doc["numPages"]) ? null :
