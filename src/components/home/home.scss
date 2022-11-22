@@ -104,6 +104,27 @@
 						transform: none;
     }
 
+    .education-card {
+        padding: 0;
+        .card-header {
+            background-color: $theme-1;
+            color: white;
+        }
+    }
+
+    .company-logo-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .company-logo {
+        max-width: 100px;
+        margin: auto;
+        img {
+            width: 100%;
+        }
+    }
+    
+
     .accordion {
         .card {
             .card-header {
@@ -132,17 +153,6 @@
 
         .exp-location {
             float: right;
-        }
-
-        .exp-image {
-            width: 64px;
-            height: 64px;
-        }
-
-        .exp-image {
-            img {
-                width: 100%;
-            }
         }
     }
 }
