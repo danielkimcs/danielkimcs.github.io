@@ -8,7 +8,7 @@ const projectsData = {
             startDate: null,
             endDate: new Date(2021, 7),
             coverPhoto: "chinese-hearts-thumbnail-min.png",
-            externalLink: "https://chinesehearts.herokuapp.com/",
+            externalLink: "https://chinese-hearts.up.railway.app/",
             path: ""
         },
         {
