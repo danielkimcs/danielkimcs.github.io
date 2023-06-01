@@ -42,18 +42,18 @@ export const Home = () => {
               <Row>
                 <p className="lead">
                   <img className="avatar" src={profilePic} alt="Me" />
-                  I'm an undergraduate junior at{" "}
+                  I'm a rising senior at{" "}
                   <a href="https://www.yale.edu/">Yale University</a> studying
                   in computer science and mathematics, with broad experience in
-                  application development, especially in full stack web. I've
+                  application development, especially in full stack web. This
+                  summer, I'll be interning as a software engineer at{" "}
+                  <a href="https://optiver.com/">Optiver</a>. Previously, I've
                   scoped and built out many external, user-facing web features
-                  throughout previous software engineer internships at{" "}
+                  throughout software engineering internships at{" "}
                   <a href="https://www.metacareers.com/">Meta (Facebook)</a> on
                   their recruiting products and at{" "}
                   <a href="https://www.gosite.com/">GoSite</a> on their software
-                  suite for small business owners. Next summer, I'll be
-                  interning as a software engineer at{" "}
-                  <a href="https://optiver.com/">Optiver</a>.
+                  suite for small business owners.
                   <br />
                   Previously, at Yale, I helped build infrastructure for the{" "}
                   <a href="https://www.internships.yesatyale.org/">
