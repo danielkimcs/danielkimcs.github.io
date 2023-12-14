@@ -2,6 +2,8 @@
 
 Written from scratch in ReactJS using frameworks like React Bootstrap.
 
+Use node v14.21.3. Run `n 14.21.3` (may need `sudo`) to change version.
+
 Production branch: `master`
 
 ## Deployment

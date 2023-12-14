@@ -8,7 +8,7 @@ const projectsData = {
             startDate: null,
             endDate: new Date(2021, 7),
             coverPhoto: "chinese-hearts-thumbnail-min.png",
-            externalLink: "https://chinese-hearts.up.railway.app/",
+            externalLink: "https://github.com/danielkimcs/chinese-hearts-game",
             path: ""
         },
         {
@@ -25,55 +25,55 @@ const projectsData = {
             coverPhoto: "advprecalc-cover_small.png",
             externalLink: "https://www.amazon.com/dp/0578479435/ref=cm_sw_em_r_mt_dp_U_cnQ.EbRMQZRY3",
             path: "adv-precalc"
-        },
-        {
-            title: "Math Team Resource Hub",
-            preview: "An official website for my high school math team to host files, support dynamic updates, and display blog posts. This conveniently allows coaches to post updates and members to access resources.",
-            tags: ["HTML","CSS","JavaScript","Firebase"],
-            description: `<p>Having revamped the <a href="https://holbrook.bergen.org/">website</a> for my high school’s annual math competition, I set out to develop a new website for our math team. Previously, we relied on mass emails to get the latest information on our upcoming meetings and contests and received lecture notes, problem sets, and past contest papers via email attachments. This meant that we often had to refer back to our inboxes and save attached files to our computers locally.</p>
-
-            <p>A single website that any student or teacher can access would handle these inconveniences. Students can visit the website’s Archive page to work on past problem sets or the Updates page to read the latest news. The site also provides links to various resources to aid members in contest preparation. In addition, outsiders interested in our program now have a front-end to look at.</p>
-            
-            <p>While developing the site, I used the CSS framework <a href="https://materializecss.com/">Materialize</a> for responsive design. Since I had to ensure that updates were only posted by a limited number of people, I implemented user authentication via <a href="https://firebase.google.com/">Firebase</a>. This website is currently hosted at <a href="https://bcamathteam.org/">bcamathteam.org</a>.</p>`,
-            startDate: new Date(2019, 8),
-            endDate: new Date(2020, 5),
-            coverPhoto: "bca-math-team-website_small.png",
-            externalLink: "https://bcamathteam.org/",
-            path: "math-team-website"
-        },
-        {
-            title: "BS Poker",
-            preview: "An implementation of BS Poker as a pass-and-play single-device Python 3 Tkinter application.",
-            tags: ["Python"],
-            description: "",
-            startDate: null,
-            endDate: null,
-            coverPhoto: "bs-poker_small.png",
-            externalLink: "https://github.com/danielkimcs/BS-poker",
-            path: ""
-        },
-        {
-            title: "Math Contest Official Website",
-            preview: "A revamped website for the Joe Holbrook Memorial Math Competition, a school-run event that annually attracts over 400 middle school students in the region.",
-            tags: ["HTML","CSS"],
-            description: "",
-            startDate: null,
-            endDate: null,
-            coverPhoto: "jhmmc-website_small.png",
-            externalLink: "https://github.com/danielkimcs/holbrook-website/",
-            path: ""
-        },
-        {
-            title: "Learning Management System Web Scraper",
-            preview: "Python scripts using RoboBrowser and BeautifulSoup that scrape information from my high school's learning management system (Schoology) to generate a list of students, teachers, and corresponding classes.",
-            tags: ["Python"],
-            description: "",
-            startDate: null,
-            endDate: null,
-            coverPhoto: "",
-            externalLink: "https://github.com/danielkimcs/bca-schoology-scraper",
-            path: ""
         }
+        // {
+        //     title: "Math Team Resource Hub",
+        //     preview: "An official website for my high school math team to host files, support dynamic updates, and display blog posts. This conveniently allows coaches to post updates and members to access resources.",
+        //     tags: ["HTML","CSS","JavaScript","Firebase"],
+        //     description: `<p>Having revamped the <a href="https://holbrook.bergen.org/">website</a> for my high school’s annual math competition, I set out to develop a new website for our math team. Previously, we relied on mass emails to get the latest information on our upcoming meetings and contests and received lecture notes, problem sets, and past contest papers via email attachments. This meant that we often had to refer back to our inboxes and save attached files to our computers locally.</p>
+
+        //     <p>A single website that any student or teacher can access would handle these inconveniences. Students can visit the website’s Archive page to work on past problem sets or the Updates page to read the latest news. The site also provides links to various resources to aid members in contest preparation. In addition, outsiders interested in our program now have a front-end to look at.</p>
+            
+        //     <p>While developing the site, I used the CSS framework <a href="https://materializecss.com/">Materialize</a> for responsive design. Since I had to ensure that updates were only posted by a limited number of people, I implemented user authentication via <a href="https://firebase.google.com/">Firebase</a>. This website is currently hosted at <a href="https://bcamathteam.org/">bcamathteam.org</a>.</p>`,
+        //     startDate: new Date(2019, 8),
+        //     endDate: new Date(2020, 5),
+        //     coverPhoto: "bca-math-team-website_small.png",
+        //     externalLink: "https://bcamathteam.org/",
+        //     path: "math-team-website"
+        // },
+        // {
+        //     title: "BS Poker",
+        //     preview: "An implementation of BS Poker as a pass-and-play single-device Python 3 Tkinter application.",
+        //     tags: ["Python"],
+        //     description: "",
+        //     startDate: null,
+        //     endDate: null,
+        //     coverPhoto: "bs-poker_small.png",
+        //     externalLink: "https://github.com/danielkimcs/BS-poker",
+        //     path: ""
+        // },
+        // {
+        //     title: "Math Contest Official Website",
+        //     preview: "A revamped website for the Joe Holbrook Memorial Math Competition, a school-run event that annually attracts over 400 middle school students in the region.",
+        //     tags: ["HTML","CSS"],
+        //     description: "",
+        //     startDate: null,
+        //     endDate: null,
+        //     coverPhoto: "jhmmc-website_small.png",
+        //     externalLink: "https://github.com/danielkimcs/holbrook-website/",
+        //     path: ""
+        // },
+        // {
+        //     title: "Learning Management System Web Scraper",
+        //     preview: "Python scripts using RoboBrowser and BeautifulSoup that scrape information from my high school's learning management system (Schoology) to generate a list of students, teachers, and corresponding classes.",
+        //     tags: ["Python"],
+        //     description: "",
+        //     startDate: null,
+        //     endDate: null,
+        //     coverPhoto: "",
+        //     externalLink: "https://github.com/danielkimcs/bca-schoology-scraper",
+        //     path: ""
+        // }
     ]
 };
 

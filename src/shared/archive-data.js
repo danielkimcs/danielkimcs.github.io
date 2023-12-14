@@ -1,21 +1,21 @@
 const archiveData = {
     data: [
         {
-            title: "Intro to Real Analysis",
+            title: "Real Analysis",
             tags: ["Course Notes", "Undergraduate"],
             date: new Date(2022, 4, 11),
             description: `Basic results from Yale's MATH 305: Lebesgue Integration and Fourier Series taught by Prof. Hee Oh.`,
             fileName: "MATH_305_Notes.pdf"
         },
         {
-            title: "Intro to Discrete Math",
+            title: "Discrete Math",
             tags: ["Course Notes", "Undergraduate"],
             date: new Date(2021, 11, 20),
             description: `Basic results from Yale's MATH 244: Discrete Mathematics at Yale College taught by Prof. Richard Kenyon.`,
             fileName: "MATH_244_Results.pdf"
         },
         {
-            title: "Intro to Probability Theory",
+            title: "Probability Theory",
             tags: ["Course Notes", "Undergraduate"],
             date: new Date(2021, 11, 19),
             description: `Basic results from Yale's MATH 241: Probability Theory taught by Prof. Yihong Wu. Skips basic definitions on probability measures and expectation.`,
@@ -29,7 +29,7 @@ const archiveData = {
             fileName: "hmmt-2020.pdf"
         },
         {
-            title: "Intro to Point Set Topology",
+            title: "Topology",
             tags: ["Course Notes"],
             date: new Date(2019, 10, 22),
             description: `Brief notes on the basics of point set topology from a 12th grade math class on proof-based multivariable calculus and linear algebra.`,

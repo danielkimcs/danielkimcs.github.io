@@ -41,21 +41,18 @@ export const Home = () => {
               <h1 className="display-3">Hi there! I'm Daniel.</h1>
               <Row>
                 <p className="lead">
-                  <img className="avatar" src={profilePic} alt="Me" />
-                  I'm a rising senior at{" "}
+                  {/* <img className="avatar" src={profilePic} alt="Me" /> */}
+                  I'm a senior at{" "}
                   <a href="https://www.yale.edu/">Yale University</a> studying
-                  in computer science and mathematics, with broad experience in
-                  application development, especially in full stack web. This
-                  summer, I'll be interning as a software engineer at{" "}
-                  <a href="https://optiver.com/">Optiver</a>. Previously, I've
-                  scoped and built out many external, user-facing web features
-                  throughout software engineering internships at{" "}
-                  <a href="https://www.metacareers.com/">Meta (Facebook)</a> on
-                  their recruiting products and at{" "}
-                  <a href="https://www.gosite.com/">GoSite</a> on their software
-                  suite for small business owners.
-                  <br />
-                  Previously, at Yale, I helped build infrastructure for the{" "}
+                  in computer science and mathematics, with broad interests in
+                  software development and data science. This past summer, I
+                  interned as a software engineer in trading systems
+                  infrastructure at <a href="https://optiver.com/">Optiver</a>.
+                  In previous internships, I've worked on recruiting products at{" "}
+                  <a href="https://www.metacareers.com/">Meta (Facebook)</a> and
+                  invoicing software at{" "}
+                  <a href="https://www.gosite.com/">GoSite</a>. At Yale, I
+                  helped build infrastructure for the{" "}
                   <a href="https://www.internships.yesatyale.org/">
                     YES Internship Program
                   </a>{" "}
@@ -103,13 +100,16 @@ export const Home = () => {
                     <Card className="education-card">
                       <Card.Header>
                         <p className="h4">
-                          Bachelor of Science in Computer Science, Mathematics
+                          Bachelor of Science
                         </p>
                         <p className="h5">
                           Yale University, September 2020 – May 2024
                         </p>
                       </Card.Header>
                       <Card.Body>
+                        Double major in Computer Science and Mathematics
+                      </Card.Body>
+                      {/* <Card.Body>
                         <p>
                           <span>Coursework:</span> Intensive Algorithms, Machine
                           Learning, Quantum Computing, Big Data Systems, Systems
@@ -119,7 +119,7 @@ export const Home = () => {
                           Discrete Mathematics, Real & Complex Analysis, Vector
                           Calculus and Linear Algebra
                         </p>
-                      </Card.Body>
+                      </Card.Body> */}
                     </Card>
                   </Col>
                 </Row>
